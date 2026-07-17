@@ -1,0 +1,60 @@
+.page {
+  min-height: 100vh;
+  position: relative;
+  background-image: url("./assets/MEVIA_filler_background.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(15, 12, 41, 0.75),
+    rgba(48, 43, 99, 0.70),
+    rgba(36, 36, 62, 0.75)
+  );
+  z-index: 0;
+}
+
+.orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.orb1 { width: 500px; height: 500px; background: #7f5af0; top: -150px; left: -150px; }
+.orb2 { width: 400px; height: 400px; background: #2cb67d; bottom: 0;    right: -100px; }
+.orb3 { width: 300px; height: 300px; background: #ff6b9d; top: 40%;     right: 5%; }
+
+/* each section sits above background */
+.hero,
+.products,
+.addons,
+.team,
+.footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* navbar always on top */
+.navbar-desktop {
+  z-index: 100;
+}
+
+.navbar-mobile {
+  z-index: 100;
+}
+
+@media (max-width: 768px) {
+  .page {
+    background-attachment: scroll;
+  }
+}
