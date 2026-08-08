@@ -16,7 +16,7 @@
   width: 48px;
   height: 48px;
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(210, 254, 44, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@
 .addon-title {
   font-size: 18px;
   font-weight: 700;
-  color: #fff;
+  color: var(--color-accent);
   margin: 0 0 14px;
 }
 
@@ -45,13 +45,13 @@
   align-items: flex-start;
   gap: 8px;
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-text);
   line-height: 1.5;
 }
 
 .addon-divider {
   height: 1px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 249, 230, 0.1);
   margin: 16px 0;
 }
 
@@ -73,7 +73,7 @@
 
 .addon-price-label {
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.45);
+  color: var(--color-text-muted);
   line-height: 1.5;
   flex: 1;
 }
@@ -81,14 +81,14 @@
 .addon-price-value {
   font-size: 13px;
   font-weight: 600;
-  color: #fff;
+  color: var(--color-accent);
   white-space: nowrap;
 }
 
 .addons-note {
   text-align: center;
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.35);
+  color: var(--color-text-muted);
   max-width: 520px;
   margin: 40px auto 0;
   line-height: 1.7;

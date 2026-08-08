@@ -4,17 +4,13 @@ export default function Hero({ onLetsCreate }) {
   return (
     <section className="hero">
       <div className="hero-inner">
-
-        <div className="hero-badge">New episodes weekly</div>
-
         <h1 className="hero-title">
-          Podcasts made for{" "}
-          <span className="gradient-text">curious kids</span>
+          PODCASTS THAT KEEPS {" "}
+          <span className="gradient-text">WORKING</span>
         </h1>
 
         <p className="hero-desc">
-          Stories, science, and everything in between — designed
-          for young minds who ask the big questions.
+          
         </p>
 
         <div className="hero-actions">

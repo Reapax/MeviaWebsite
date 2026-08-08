@@ -21,7 +21,7 @@ const Products = forwardRef((props, ref) => {
         <span className="section-badge">Our Base</span>
         <h2 className="section-title">One Package.<br />Everything Included.</h2>
         <p className="section-desc">
-          Everything you need to launch and grow your podcast — fully managed by MEViA.
+          Everything you need to launch and grow your podcast — fully managed by MEVIA.
         </p>
       </div>
 

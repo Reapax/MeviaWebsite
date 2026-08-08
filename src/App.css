@@ -1,7 +1,17 @@
+:root {
+  --color-primary:   #361df2;
+  --color-accent:    #d2fe2c;
+  --color-dark:      #474743;
+  --color-surface:   #fff9e6;
+  --color-white:     #ffffff;
+  --color-text:      rgba(255, 255, 255, 0.85);
+  --color-text-muted: rgba(255, 255, 255, 0.45);
+}
+
 .page {
   min-height: 100vh;
   position: relative;
-  background-image: url("./assets/MEVIA_filler_background.png");
+  background-image: url("./assets/MEVIA_Temp.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

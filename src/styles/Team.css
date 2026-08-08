@@ -24,7 +24,7 @@
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #7f5af0, #2cb67d);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,20 +34,19 @@
 .team-initials {
   font-size: 22px;
   font-weight: 700;
-  color: #fff;
-  letter-spacing: 0.5px;
+  color: var(--color-dark);
 }
 
 .team-name {
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
+  color: var(--color-surface);
   margin: 0;
 }
 
 .team-role {
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.45);
+  color: var(--color-text-muted);
   margin: 0;
 }
 

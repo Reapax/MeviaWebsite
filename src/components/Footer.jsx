@@ -17,13 +17,13 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-glass glass">
-
         <div className="footer-top">
           <div className="footer-brand">
+
             <span className="footer-logo">MEVIA</span>
             <p className="footer-tagline">Podcast Production — done right.</p>
+            
           </div>
-
           <nav className="footer-nav" aria-label="Footer navigation">
             <span className="footer-nav-title">Navigation</span>
             <ul className="footer-nav-list">
@@ -34,7 +34,6 @@ export default function Footer() {
               ))}
             </ul>
           </nav>
-
           <div className="footer-contact">
             <span className="footer-nav-title">Kontakt</span>
             <a href="mailto:hello@mevia.ch" className="footer-email">
@@ -61,8 +60,8 @@ export default function Footer() {
           <p className="footer-copy">
             © {new Date().getFullYear()} MEVIA Podcast Production. All rights reserved.
           </p>
-        </div>
 
+        </div>
       </div>
     </footer>
   );

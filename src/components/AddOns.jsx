@@ -65,7 +65,7 @@ export default function AddOns() {
           Flexibel hinzubuchbar — combine what fits your goals.
         </p>
       </div>
-
+      
       <div className="addons-grid">
         {addons.map((addon) => (
           <GlassCard key={addon.title}>
@@ -82,7 +82,6 @@ export default function AddOns() {
             </ul>
 
             <div className="addon-divider" />
-
             <ul className="addon-pricing">
               {addon.pricing.map((p) => (
                 <li key={p.label} className="addon-price-item">
@@ -93,8 +92,8 @@ export default function AddOns() {
             </ul>
           </GlassCard>
         ))}
-      </div>
 
+      </div>
       <p className="addons-note">
         Sollte das Basispaket nicht Ihren Anforderungen entsprechen, passen wir den Leistungsumfang auf Anfrage individuell an.
       </p>

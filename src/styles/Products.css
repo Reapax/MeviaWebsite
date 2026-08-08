@@ -1,5 +1,5 @@
 .products {
-  padding: 100px 24px;
+  padding: 130px 12px;
   position: relative;
   z-index: 1;
 }
@@ -14,9 +14,9 @@
   font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.55);
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--color-accent);
+  background: rgba(210, 254, 44, 0.08);
+  border: 1px solid rgba(210, 254, 44, 0.25);
   padding: 6px 16px;
   border-radius: 50px;
   margin-bottom: 16px;
@@ -25,7 +25,7 @@
 .section-title {
   font-size: clamp(28px, 4vw, 48px);
   font-weight: 700;
-  color: #fff;
+  color: var(--color-accent);
   letter-spacing: -1px;
   line-height: 1.15;
   margin-bottom: 14px;
@@ -33,7 +33,7 @@
 
 .section-desc {
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.45);
+  color: var(--color-text-muted);
   max-width: 480px;
   margin: 0 auto;
   line-height: 1.7;
@@ -60,7 +60,7 @@
   width: 52px;
   height: 52px;
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(210, 254, 44, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,13 +71,13 @@
 .product-name {
   font-size: 22px;
   font-weight: 700;
-  color: #fff;
+  color: var(--color-surface);
   margin: 0 0 4px;
 }
 
 .product-tagline {
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.45);
+  color: var(--color-text-muted);
   margin: 0;
 }
 
@@ -95,15 +95,14 @@
   align-items: flex-start;
   gap: 10px;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--color-text);
   line-height: 1.5;
 }
 
 .feature-check {
-  color: #2cb67d;
+  color: var(--color-accent);
   font-weight: 700;
   flex-shrink: 0;
-  margin-top: 1px;
 }
 
 .product-bottom {
@@ -113,7 +112,7 @@
   flex-wrap: wrap;
   gap: 16px;
   padding-top: 16px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 249, 230, 0.1);
 }
 
 .product-price {
@@ -125,17 +124,17 @@
 .price-amount {
   font-size: 32px;
   font-weight: 700;
-  color: #fff;
+  color: var(--color-accent);
 }
 
 .price-period {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--color-text-muted);
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #7f5af0, #6b46e0);
-  color: #fff;
+  background: var(--color-primary);
+  color: var(--color-accent);
   border: none;
   padding: 13px 28px;
   border-radius: 50px;

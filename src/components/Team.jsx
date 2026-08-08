@@ -2,10 +2,15 @@ import GlassCard from "./GlassCard";
 import "../styles/Team.css";
 
 const team = [
-  { name: "Max Mustermann", role: "CEO & Founder",        initials: "MM" },
-  { name: "Anna Beispiel",  role: "Head of Production",   initials: "AB" },
-  { name: "Luca Demo",      role: "Audio Engineer",        initials: "LD" },
-  { name: "Sara Filler",    role: "Content Strategist",    initials: "SF" },
+  { name: "Chantal Carpio", role: "CEO & Founder",        initials: "CC" },
+  { name: "Yanina de Sapio",  role: "Head of Production",   initials: "YS" },
+  { name: "Alyssa Grande",      role: "Marketing",        initials: "AG" },
+  { name: "Ryan Gorden",    role: "Audio Engineer",    initials: "RG" },
+  { name: "Julian Roth",    role: "Human Resource",    initials: "JR" },
+  { name: "Yasmina Laskrouif",    role: "Content Planner",    initials: "YL" },
+  { name: "Ekon Giezendanner",    role: "Content Filmer",    initials: "EG" },
+  { name: "Phoebe Iun",    role: "Head Art",    initials: "PI" },
+  { name: "Noah Eberhardt",    role: "Head IT",    initials: "NE" },
 ];
 
 export default function Team() {
