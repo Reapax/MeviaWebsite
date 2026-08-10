@@ -1,5 +1,4 @@
 import { forwardRef } from "react";
-import GlassCard from "./GlassCard";
 import "../styles/Products.css";
 
 const features = [
@@ -26,7 +25,7 @@ const Products = forwardRef((props, ref) => {
       </div>
 
       <div className="products-card-wrap">
-        <GlassCard>
+        <div>
           <div className="product-card-inner">
 
             <div className="product-top">
@@ -55,7 +54,7 @@ const Products = forwardRef((props, ref) => {
             </div>
 
           </div>
-        </GlassCard>
+        </div>
       </div>
     </section>
   );

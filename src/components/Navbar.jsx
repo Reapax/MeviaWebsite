@@ -2,10 +2,11 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "../styles/Navbar.css";
 
 const navItems = [
-  { id: "home",     label: "Home",     icon: "ti-home",   path: "/" },
-  { id: "products", label: "Products", icon: "ti-box",    path: "/products" },
-  { id: "addons",   label: "Add-ons",  icon: "ti-puzzle", path: "/addons" },
-  { id: "team",     label: "Team",     icon: "ti-users",  path: "/team" },
+  { id: "home",     label: "HOME", path: "/" },
+  { id: "portfolio", label: "PORTFOLIO", path: "/portfolio"},
+  { id: "services", label: "SERVICES", path: "/services" },
+  { id: "packages", label: "PACKAGES", path: "/packages" },
+  { id: "about-us", label: "ABOUT US", path: "/about-us" },
 ];
 
 export default function Navbar() {
@@ -14,8 +15,7 @@ export default function Navbar() {
   return (
     <>
       {/* Desktop */}
-      <nav className="navbar-desktop glass" role="navigation" aria-label="Desktop navigation">
-        <span className="navbar-brand">MEVIA Podcast Production GmbH</span>
+      <nav className="navbar-desktop" role="navigation" aria-label="Desktop navigation">
         <div className="navbar-links">
           {navItems.map((item) => (
             <DesktopNavItem
@@ -28,7 +28,7 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile */}
-      <nav className="navbar-mobile glass" role="navigation" aria-label="Mobile navigation">
+      <nav className="navbar-mobile" role="navigation" aria-label="Mobile navigation">
         {navItems.map((item) => (
           <MobileNavItem
             key={item.id}
@@ -50,7 +50,6 @@ function DesktopNavItem({ item, active }) {
       aria-label={item.label}
       aria-current={active ? "page" : undefined}
     >
-      <i className={`ti ${item.icon}`} aria-hidden="true" />
       {item.label}
     </button>
   );
@@ -65,7 +64,6 @@ function MobileNavItem({ item, active }) {
       aria-label={item.label}
       aria-current={active ? "page" : undefined}
     >
-      <i className={`ti ${item.icon}`} aria-hidden="true" />
       <span>{item.label}</span>
     </button>
   );

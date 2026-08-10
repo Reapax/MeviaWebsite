@@ -1,5 +1,5 @@
 .hero {
-  min-height: 60vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,7 +9,8 @@
 }
 
 .hero-inner {
-  max-width: 680px;
+  max-width: max-content;
+  position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -18,26 +19,23 @@
 }
 
 .hero-title {
-  font-size: clamp(38px, 6vw, 76px);
-  font-weight: 700;
-  color: var(--color-surface);
+  font-family: 'Malcom', sans-serif;
+  font-weight: 400;
+  font-size: 200px;
+  color: var(--color-primary);
   line-height: 1.1;
-  letter-spacing: -1.5px;
+  letter-spacing: 3px;
   margin: 0;
 }
 
-.gradient-text {
-  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.hero-desc {
-  font-size: 17px;
-  color: var(--color-text-muted);
-  line-height: 1.7;
-  max-width: 480px;
+.hero-subtitle {
+  position: absolute;
+  bottom: 80px;
+  right: 5px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  color: var(--color-white);
   margin: 0;
 }
 
@@ -49,22 +47,33 @@
   margin-top: 8px;
 }
 
-.btn-primary {
-  background: var(--color-primary);
-  color: var(--color-accent);
+.hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/Icons/MEVIA_MainButton.png');
+  background-size: 100% 100%;   /* stretch to fill the button */
+  background-repeat: no-repeat;
+  background-color: transparent;
   border: none;
-  padding: 14px 32px;
-  border-radius: 50px;
+  padding-right: 10%;
+  width: 180px;
+  height: 45px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
   font-size: 15px;
-  font-weight: 600;
+  color: var(--color-dark);
   cursor: pointer;
-  transition: opacity 0.2s, transform 0.2s;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  transition: transform 0.15s ease, filter 0.15s ease;
 }
 
-.btn-primary:hover {
-  opacity: 0.85;
-  transform: translateY(-2px);
+.hero-btn:hover {
+  transform: scale(1.03);
+  filter: brightness(0.97);
+}
+
+.hero-btn:active{
+  transform: scale(0.98);
 }
 
 @media (max-width: 768px) {

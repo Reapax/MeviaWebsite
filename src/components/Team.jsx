@@ -1,4 +1,3 @@
-import GlassCard from "./GlassCard";
 import "../styles/Team.css";
 
 const team = [
@@ -26,7 +25,7 @@ export default function Team() {
 
       <div className="team-grid">
         {team.map((member) => (
-          <GlassCard key={member.name}>
+          <div>
             <div className="team-card-inner">
               <div className="team-avatar">
                 <span className="team-initials">{member.initials}</span>
@@ -34,7 +33,7 @@ export default function Team() {
               <h3 className="team-name">{member.name}</h3>
               <p className="team-role">{member.role}</p>
             </div>
-          </GlassCard>
+          </div>
         ))}
       </div>
     </section>

@@ -1,58 +1,33 @@
 :root {
-  --color-primary:   #361df2;
-  --color-accent:    #d2fe2c;
-  --color-dark:      #474743;
-  --color-surface:   #fff9e6;
-  --color-white:     #ffffff;
-  --color-text:      rgba(255, 255, 255, 0.85);
-  --color-text-muted: rgba(255, 255, 255, 0.45);
-}
-
-.page {
-  min-height: 100vh;
-  position: relative;
-  background-image: url("./assets/MEVIA_Temp.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  --color-primary:   #d8fb4b;
+  --color-accent:    #443dff;
+  --color-dark:      #1b1b17;
+  --color-white:     #faf7f5;
 }
 
 .page::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(15, 12, 41, 0.75),
-    rgba(48, 43, 99, 0.70),
-    rgba(36, 36, 62, 0.75)
-  );
+  background: rgba(0, 0, 0, 0.7);
   z-index: 0;
 }
 
-.orb {
-  position: fixed;
-  border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.4;
-  pointer-events: none;
-  z-index: 0;
+.page {
+  position: relative;
+  background-image: url("./assets/Images/LandingPage/MEVIA_Background.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
-
-.orb1 { width: 500px; height: 500px; background: #7f5af0; top: -150px; left: -150px; }
-.orb2 { width: 400px; height: 400px; background: #2cb67d; bottom: 0;    right: -100px; }
-.orb3 { width: 300px; height: 300px; background: #ff6b9d; top: 40%;     right: 5%; }
 
 /* each section sits above background */
 .hero,
+.portfolio
 .products,
-.addons,
 .team,
-.footer {
-  position: relative;
-  z-index: 1;
-}
+.footer
 
 /* navbar always on top */
 .navbar-desktop {

@@ -1,4 +1,3 @@
-import GlassCard from "./GlassCard";
 import "../styles/AddOns.css";
 
 const addons = [
@@ -68,7 +67,7 @@ export default function AddOns() {
       
       <div className="addons-grid">
         {addons.map((addon) => (
-          <GlassCard key={addon.title}>
+          <div>
             <div className="addon-icon">{addon.icon}</div>
             <h3 className="addon-title">{addon.title}</h3>
 
@@ -90,7 +89,7 @@ export default function AddOns() {
                 </li>
               ))}
             </ul>
-          </GlassCard>
+          </div>
         ))}
 
       </div>

@@ -4,21 +4,11 @@ export default function Hero({ onLetsCreate }) {
   return (
     <section className="hero">
       <div className="hero-inner">
-        <h1 className="hero-title">
-          PODCASTS THAT KEEPS {" "}
-          <span className="gradient-text">WORKING</span>
-        </h1>
-
-        <p className="hero-desc">
-          
-        </p>
-
+        <h1 className="hero-title">MEVIA</h1>
+        <p className="hero-subtitle">PODCAT PRODUCTION</p>
         <div className="hero-actions">
-          <button className="btn-primary" onClick={onLetsCreate}>
-            Let's Create
-          </button>
+          <button className="hero-btn" onClick={onLetsCreate}>LET'S CREATE</button>
         </div>
-
       </div>
     </section>
   );
