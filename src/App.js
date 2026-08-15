@@ -1,11 +1,12 @@
 import { useRef } from "react";
+import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Portfolio from "./components/Portfolio";
-import Products from "./components/Products";
-import Team from "./components/Team";
+import Services from "./components/Services";
+import Packages from "./components/Packages";
+import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
-import "./App.css";
 
 export default function App() {
   const productsRef = useRef(null);
@@ -19,8 +20,9 @@ export default function App() {
       <Navbar />
       <Hero onLetsCreate={scrollToProducts} />
       <Portfolio />
-      <Products ref={productsRef} />
-      <Team />
+      <Services />
+      <Packages ref={productsRef} />
+      <AboutUs />
       <Footer />
     </div>
   );

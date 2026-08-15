@@ -1,0 +1,30 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    padding: 100px 24px 100px;
+    gap: 60px;
+    z-index: 1;
+    background-color: var(--color-dark);
+}
+
+.about-us-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+    color: var(--color-primary);
+}
+
+.about-us-title-bold {
+    font-weight: bold;
+}
+
+.about-us-description {
+    padding: 0 100px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: var(--color-white);
+}

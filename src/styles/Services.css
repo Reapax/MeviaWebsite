@@ -1,0 +1,117 @@
+.services {
+    background-color: var(--color-dark);
+    position: relative;
+    padding: 100px 0px;
+    z-index: 1;
+}
+
+.services-title {
+    padding: 20px 100px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: var(--color-white);
+}
+
+.services-title-yellow {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: var(--color-primary);
+}
+
+.services-offers-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: var(--color-primary);
+}
+
+.services-offers-description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: var(--color-white);
+}
+
+.services-offers-btn {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    white-space: nowrap;
+    background-image: url('../assets/Icons/MEVIA_MainButton.png');
+    background-size: 100% 100%;   /* stretch to fill the button */
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    padding-right: 20px;
+    margin-top: 20px;
+    width: 200px;
+    height: 45px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: var(--color-dark);
+    cursor: pointer;
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.services-offers-btn:hover {
+    transform: scale(1.03);
+    filter: brightness(0.97);
+}
+
+.services-offers-btn:active {
+    transform: scale(0.98);
+}
+
+.services-offers-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.services-offers-carousel-item {
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.services-offers-carousel-track {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding:  50px 50px;
+}
+
+.services-offers-carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 40px;
+}
+
+
+.services-offers-carousel-btn {
+    background: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+}
+
+.services-offers-carousel-btn img {
+    width: 60px;
+    height: 60px;
+}
+
+.services-offers-carousel-btn:hover {
+    transform: scale(1.03);
+    filter: brightness(0.97);
+}
+
+.services-offers-carousel-btn:active {
+    transform: scale(0.98);
+}
