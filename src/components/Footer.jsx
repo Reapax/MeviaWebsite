@@ -6,11 +6,11 @@ import linkedInIcon from "../assets/Icons/MEVIA_Icon_LinkedIn.png"
 
 
 const navLinks = [
-  { label: "HOME",      href: "#top"        },
+  { label: "HOME",      href: "#home"        },
   { label: "PORTFOLIO", href: "#portfolio"  },
   { label: "SERVICES",  href: "#services"   },
   { label: "PACKAGES",  href: "#packages"   },
-  { label: "ABOUT US",  href: "#aboutus"    }
+  { label: "ABOUT US",  href: "#about-us"    }
 ];
 
 const socialLinks = [
@@ -30,7 +30,22 @@ export default function Footer() {
         <div className="footer-navigation">
           <h4 className="footer-navigation-title">NAVIGATION</h4>
           {navLinks.map((nav) => (
-            <a key={nav.label} href={nav.href}>
+            <a key={nav.label} href={nav.href} onClick={(e) => 
+              {
+                e.preventDefault();
+                if (nav.href === "#home") 
+                  {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  } 
+                  else 
+                  {
+                    const section = document.getElementById(nav.href.replace("#", ""));
+                    if (section) 
+                    {
+                      section.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }
+              }}>
               {nav.label}                       
             </a>
           ))}

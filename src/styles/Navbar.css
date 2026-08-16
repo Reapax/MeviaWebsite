@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: space-evenly;
   position: sticky;
-  padding: 0 300px;
   top: 40px;
+  padding: 0 300px;
   height: 60px;
   z-index: 1000; /* <- DONT LOWER THIS VALUE */
 }
@@ -55,8 +55,8 @@
   bottom: 16px;
   left: 16px;
   right: 16px;
-  border-radius: 20px;
   justify-content: space-around;
+  background-color: var(--color-dark);
   padding: 10px 0 env(safe-area-inset-bottom);
   z-index: 100;
 }
@@ -66,18 +66,19 @@
   flex-direction: column;
   align-items: center;
   gap: 4px;
-  padding: 6px 20px;
+  padding: 5px 20px;
   border: none;
   background: transparent;
-  color: rgba(255, 249, 230, 0.4);
+  color: var(--color-white);
   font-size: 11px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
   cursor: pointer;
   transition: color 0.2s;
 }
 
 .mobile-nav-item.active {
-  color: var(--color-accent);
+  color: var(--color-primary);
   font-weight: bold;
 }
 

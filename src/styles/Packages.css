@@ -5,8 +5,9 @@
     justify-content: flex-start;
     position: relative;
     z-index: 1;
+    min-height: 100vh;
     gap: 36px;
-    padding: 50px 100px;
+    padding: 150px 100px;
 }
 
 .packages-column {

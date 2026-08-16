@@ -2,7 +2,7 @@ import "../styles/AboutUs.css";
 
 export default function AboutUs() {
     return (
-        <section className="about-us">
+        <section className="about-us" id="about-us">
             <h2 className="about-us-title">
                 <strong className="about-us-title-bold">MEVIA PODCASTS</strong>, DIE MAN NICHT
                 <p>NUT <strong className="about-us-title-bold">HÖRT</strong>, SONDERN <strong className="about-us-title-bold">ERLEBT</strong>.</p>                

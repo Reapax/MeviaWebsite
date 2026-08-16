@@ -5,6 +5,7 @@
   position: relative;
   padding: 50px 0px;
   z-index: 1;
+  min-height: auto;
 }
 
 .footer-inner {

@@ -1,8 +1,9 @@
 .services {
     background-color: var(--color-dark);
     position: relative;
-    padding: 100px 0px;
+    padding: 150px 0px;
     z-index: 1;
+    min-height: 100vh;
 }
 
 .services-title {
@@ -24,6 +25,7 @@
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     font-size: 30px;
+    line-height: 1.5;
     color: var(--color-primary);
 }
 
@@ -31,6 +33,7 @@
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 20px;
+    line-height: 1.5;
     color: var(--color-white);
 }
 
@@ -45,7 +48,7 @@
     background-color: transparent;
     border: none;
     padding-right: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
     width: 200px;
     height: 45px;
     font-family: 'Inter', sans-serif;
@@ -71,6 +74,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-top: 100px;
 }
 
 .services-offers-carousel-item {
@@ -101,6 +105,7 @@
     width: 50px;
     height: 50px;
     padding: 0 50px;
+    margin-top: 25px;
     cursor: pointer;
 }
 

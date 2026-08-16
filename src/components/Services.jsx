@@ -30,7 +30,7 @@ export default function Services() {
     }
 
     return (
-        <section className="services">
+        <section className="services" id="services">
             <h2 className="services-title">
                 SERVICES WE <span className="services-title-yellow">OFFER</span>
             </h2>

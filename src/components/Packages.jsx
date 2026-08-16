@@ -64,7 +64,7 @@ export default function Packages() {
     };
 
     return (
-        <section className="packages">
+        <section className="packages" id="packages">
             <div className="packages-column">
                 <h2 className="packages-base-title">
                     OUR <span className="packages-base-title-yellow">BASE</span>

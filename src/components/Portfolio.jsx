@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../styles/Portfolio.css";
 import sliderLeft from "../assets/Icons/MEVIA_SliderLeft.png"
 import sliderRight from "../assets/Icons/MEVIA_SliderRight.png"
@@ -16,17 +16,34 @@ const projects = [
 
 export default function Portfolio() {
     const [current, setCurrent] = useState(0);
+    const [itemsToShow, setItemsToShow] = useState(3);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth <= 480) {
+                setItemsToShow(1);
+            } else if (window.innerWidth <= 768) {
+                setItemsToShow(2);
+            } else {
+                setItemsToShow(3);
+            }
+        };
+
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     const handleRight = () => {
-      setCurrent(current === projects.length - 3 ? 0 : current + 1);
+        setCurrent(current === projects.length - itemsToShow ? 0 : current + 1);
     };
     
     const handleLeft = () => {
-        setCurrent(current === 0 ? projects.length - 3 : current - 1);
+        setCurrent(current === 0 ? projects.length - itemsToShow : current - 1);
     }
 
     return (
-        <section className="portfolio">
+        <section className="portfolio" id="portfolio">
             <h2 className="portfolio-title">
                 DISCOVER OUR <span className="portfolio-title-yellow">PROJECTS</span>
             </h2>
@@ -35,7 +52,7 @@ export default function Portfolio() {
                     <img src={sliderLeft} alt="Previous"/>
                 </button>
                 <div className="portfolio-carousel-track">
-                    {projects.slice(current, current + 3).map((project) => (
+                    {projects.slice(current, current + itemsToShow).map((project) => (
                         <div key={project.title} className="portfolio-carousel-item">
                             <img src={project.image} alt={project.title} className="project-image" />
                             <button className="portfolio-carousel-sound-btn">
