@@ -22,7 +22,7 @@ export default function Portfolio() {
         const handleResize = () => {
             if (window.innerWidth <= 480) {
                 setItemsToShow(1);
-            } else if (window.innerWidth <= 768) {
+            } else if (window.innerWidth <= 1100) {
                 setItemsToShow(2);
             } else {
                 setItemsToShow(3);

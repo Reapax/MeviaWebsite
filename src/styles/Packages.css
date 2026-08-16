@@ -237,3 +237,274 @@
 .packages-btn:active {
     transform: scale(0.98);
 }
+
+@media (max-width: 1300px) {
+
+    .packages {
+        min-height: 75vh;
+        gap: 30px;
+        padding: 120px 60px;
+    }
+
+    .packages-base-wrapper,
+    .packages-addons-wrapper {
+        height: 500px;
+    }
+
+    .packages-base {
+        padding: 25px;
+        gap: 25px;
+    }
+
+    .packages-base-title,
+    .packages-addons-title {
+        font-size: 36px;
+    }
+
+    .packages-base-title-yellow,
+    .packages-addons-title-yellow {
+        font-size: 36px;
+    }
+
+    .packages-base-features-item,
+    .packages-base-note,
+    .packages-base-repurposing-list,
+    .packages-base-onboardingnote,
+    .packages-addons-note,
+    .packages-addons-item,
+    .packages-addons-closingNote {
+        font-size: 14px;
+    }
+
+    .packages-base-price {
+        font-size: 36px;
+    }
+
+    .packages-base-onetimefee {
+        font-size: 18px;
+    }
+
+    .packages-btn {
+        font-size: 18px;
+    }
+
+    .packages-btn-yellow {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .packages {
+        min-height: 60vh;
+        flex-direction: column;
+        gap: 50px;
+        padding: 100px 40px;
+    }
+
+    .packages-column {
+        width: 100%;
+    }
+
+    .packages-column:first-child,
+    .packages-column:last-child {
+        flex: none;
+        width: 100%;
+    }
+
+    .packages-base-wrapper,
+    .packages-addons-wrapper {
+        height: auto;
+        min-height: 500px;
+    }
+
+    .packages-base {
+        padding: 25px;
+        gap: 20px;
+    }
+
+    .packages-base-title,
+    .packages-addons-title {
+        font-size: 34px;
+    }
+
+    .packages-base-title-yellow,
+    .packages-addons-title-yellow {
+        font-size: 34px;
+    }
+
+    .packages-base-left {
+        flex: 0 50%;
+    }
+
+    .packages-base-right {
+        flex: 1;
+    }
+
+    .packages-base-features-item,
+    .packages-base-note,
+    .packages-base-repurposing-list,
+    .packages-base-onboardingnote,
+    .packages-addons-note,
+    .packages-addons-item,
+    .packages-addons-closingNote {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .packages-base-price {
+        padding-top: 150px;
+        font-size: 36px;
+    }
+
+    .packages-btn-container {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .packages {
+        min-height: 50vh;
+        gap: 40px;
+        padding: 80px 20px;
+    }
+
+    .packages-base-wrapper,
+    .packages-addons-wrapper {
+        height: auto;
+        min-height: 0;
+    }
+
+    .packages-base {
+        flex-direction: column;
+        padding: 25px 20px;
+        gap: 25px;
+        height: auto;
+    }
+
+    .packages-base-title,
+    .packages-addons-title {
+        margin-bottom: 12px;
+        font-size: 30px;
+    }
+
+    .packages-base-title-yellow,
+    .packages-addons-title-yellow {
+        font-size: 30px;
+    }
+
+    .packages-base-left,
+    .packages-base-right {
+        width: 100%;
+        flex: none;
+    }
+
+    .packages-base-features-item,
+    .packages-base-note,
+    .packages-base-repurposing-list,
+    .packages-base-onboardingnote,
+    .packages-addons-note,
+    .packages-addons-item,
+    .packages-addons-closingNote {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .packages-base-price {
+        padding-top: 20px;
+        font-size: 32px;
+    }
+
+    .packages-base-onetimefee {
+        font-size: 18px;
+    }
+
+    .packages-addons {
+        height: auto;
+        padding: 25px 20px;
+    }
+
+    .packages-addons-closingNote {
+        margin-top: 20px;
+    }
+
+    .packages-btn-container {
+        justify-content: flex-end;
+        margin-top: 15px;
+    }
+
+    .packages-btn {
+        font-size: 16px;
+    }
+
+    .packages-btn-yellow {
+        font-size: 16px;
+    }
+
+    .packages-btn img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .packages {
+        min-height: 50vh;
+        gap: 35px;
+        padding: 70px 15px;
+    }
+
+    .packages-base-title,
+    .packages-addons-title {
+        font-size: 28px;
+    }
+
+    .packages-base-title-yellow,
+    .packages-addons-title-yellow {
+        font-size: 28px;
+    }
+
+    .packages-base {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .packages-addons {
+        padding: 20px 15px;
+    }
+
+    .packages-base-features-item,
+    .packages-base-note,
+    .packages-base-repurposing-list,
+    .packages-base-onboardingnote,
+    .packages-addons-note,
+    .packages-addons-item,
+    .packages-addons-closingNote {
+        font-size: 13px;
+        line-height: 1.35;
+    }
+
+    .packages-base-price {
+        padding-top: 15px;
+        font-size: 29px;
+    }
+
+    .packages-base-onetimefee {
+        font-size: 17px;
+    }
+
+    .packages-btn {
+        font-size: 15px;
+    }
+
+    .packages-btn-yellow {
+        font-size: 15px;
+    }
+
+    .packages-btn img {
+        width: 42px;
+        height: 42px;
+    }
+}

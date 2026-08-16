@@ -33,14 +33,15 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    padding: 0 15px;
     margin-top: 50px;
 }
 
 .portfolio-carousel-track {
     display: flex;
     flex-direction: row;
-    gap: 50px;
-    padding:  50px 50px;
+    gap: 30px;
+    padding:  50px 25px;
 }
 
 .portfolio-carousel-item {
@@ -88,9 +89,6 @@
 .portfolio-carousel-btn {
     background: transparent;
     border: none;
-    margin: 0 50px;
-    width: 50px;
-    height: 50px;
     cursor: pointer;
 }
 
@@ -106,4 +104,162 @@
 
 .portfolio-carousel-btn:active {
     transform: scale(0.98);
+}
+
+@media (max-width: 1300px) {
+
+    .portfolio {
+        padding: 120px 0px;
+        min-height: 75vh;
+    }
+
+    .portfolio-title {
+        padding: 20px 60px;
+    }
+
+    .project-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .portfolio-carousel-track {
+        gap: 20px;
+        padding: 40px 30px;
+    }
+
+    .portfolio-carousel-btn img {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .portfolio {
+        padding: 100px 0px;
+        min-height: 60vh;
+    }
+
+    .portfolio-title {
+        padding: 20px 40px;
+        font-size: 36px;
+    }
+
+    .portfolio-title-yellow {
+        font-size: 36px;
+    }
+
+    .project-image {
+        width: 270px;
+        height: 270px;
+    }
+
+    .portfolio-carousel {
+        margin-top: 35px;
+    }
+
+    .portfolio-carousel-track {
+        gap: 20px;
+        padding: 35px 20px;
+    }
+
+    .portfolio-carousel-item {
+        gap: 12px;
+    }
+
+    .portfolio-carousel-btn {
+        width: 45px;
+        height: 45px;
+    }
+
+    .portfolio-carousel-btn img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .portfolio {
+        padding: 80px 0px;
+        min-height: 50vh;
+    }
+
+    .portfolio-title {
+        padding: 15px 20px;
+        font-size: 32px;
+    }
+
+    .portfolio-title-yellow {
+        font-size: 32px;
+    }
+
+    .portfolio-carousel {
+        margin-top: 25px;
+    }
+
+    .portfolio-carousel-track {
+        gap: 20px;
+        padding: 25px 10px;
+    }
+
+    .project-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    .portfolio-carousel-item {
+        gap: 10px;
+    }
+
+    .portfolio-carousel-sound-btn {
+        font-size: 13px;
+    }
+
+    .portfolio-carousel-sound-btn-yellow {
+        font-size: 13px;
+    }
+
+    .portfolio-carousel-btn {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+
+    .portfolio-carousel-btn img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .portfolio {
+        padding: 70px 0px;
+        min-height: 50vh;
+    }
+
+    .portfolio-title {
+        padding: 15px;
+        font-size: 28px;
+    }
+
+    .portfolio-title-yellow {
+        font-size: 28px;
+    }
+
+    .project-image {
+        width: 190px;
+        height: 190px;
+    }
+
+    .portfolio-carousel-track {
+        gap: 20px;
+        padding: 20px 5px;
+    }
+
+    .portfolio-carousel-btn img {
+        width: 40px;
+        height: 40px;
+    }
 }

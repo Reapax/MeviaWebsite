@@ -31,30 +31,17 @@ export default function Navbar() {
   }, []);
   
   return (
-    <>
-      {/* Desktop */}
-      <nav className="navbar-desktop">
-        <div className="navbar-links">
-          {navItems.map((item) => (
-            <DesktopNavItem
-              key={item.id}
-              item={item}
-              active={activeSection === item.section}
-            />
-          ))}
-        </div>
-      </nav>
-
-      <nav className="navbar-mobile">
+    <nav className="navbar-desktop">
+      <div className="navbar-links">
         {navItems.map((item) => (
-          <MobileNavItem
+          <DesktopNavItem
             key={item.id}
             item={item}
             active={activeSection === item.section}
           />
         ))}
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 }
 
@@ -77,33 +64,6 @@ function DesktopNavItem({ item, active }) {
   return (
     <button
       className={`desktop-nav-item ${active ? "active" : ""}`}
-      onClick={handleClick}
-      aria-label={item.label}
-    >
-      {item.label}
-    </button>
-  );
-}
-
-function MobileNavItem({ item, active }) {
-  const handleClick = () => {
-    if (item.section === "home") 
-    {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } 
-    else 
-    {
-      const section = document.getElementById(item.section);
-      if (section) 
-      {
-        section.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-};
-
-  return (
-    <button
-      className={`mobile-nav-item ${active ? "active" : ""}`}
       onClick={handleClick}
       aria-label={item.label}
     >

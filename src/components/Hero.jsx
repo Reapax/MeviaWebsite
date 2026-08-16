@@ -1,7 +1,7 @@
 import "../styles/Hero.css";
 import meviaLogo from "../assets/Images/Logos/Mevia_Logo_Yellow.png"
 
-export default function Hero({ onLetsCreate }) {
+export default function Hero() {
   const scrollToProducts = () => {
     const section = document.getElementById("packages");
     if (section) {

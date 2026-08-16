@@ -20,9 +20,12 @@ const socialLinks = [
 ];
 
 export default function Footer() {
-  const handleRight = () => {
-        return
-    };
+  const scrollToProducts = () => {
+    const section = document.getElementById("packages");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <footer className="footer">
@@ -70,7 +73,7 @@ export default function Footer() {
           <p>ALL RIGHTS RESERVED</p>
         </div>
         <div className="footer-btn-container">
-          <button className="footer-btn" onClick={handleRight}>
+          <button className="footer-btn" onClick={scrollToProducts}>
               DISCOVER <span className="footer-btn-black">PACKAGES</span>
               <img src={sliderRight} alt="DISCOVER PACKAGES"/>
           </button>

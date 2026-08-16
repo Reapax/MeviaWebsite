@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../styles/Services.css";
 import sliderLeft from "../assets/Icons/MEVIA_SliderLeft.png"
 import sliderRight from "../assets/Icons/MEVIA_SliderRight.png"
@@ -20,13 +20,30 @@ const offers = [
 
 export default function Services() {
     const [current, setCurrent] = useState(0);
+    const [itemsToShow, setItemsToShow] = useState(3);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth <= 480) {
+                setItemsToShow(1);
+            } else if (window.innerWidth <= 768) {
+                setItemsToShow(2);
+            } else {
+                setItemsToShow(3);
+            }
+        };
+
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
     
     const handleRight = () => {
-        setCurrent(current === offers.length - 3 ? 0 : current + 1);
+        setCurrent(current === offers.length - itemsToShow ? 0 : current + 1);
     };
         
     const handleLeft = () => {
-        setCurrent(current === 0 ? offers.length - 3 : current - 1);
+        setCurrent(current === 0 ? offers.length - itemsToShow : current - 1);
     }
 
     return (
@@ -36,7 +53,7 @@ export default function Services() {
             </h2>
             <div className="services-offers-carousel">
                 <div className="services-offers-carousel-track">
-                    {offers.slice(current, current + 3).map((offers) => (
+                    {offers.slice(current, current + itemsToShow).map((offers) => (
                         <div key={offers.title} className="services-offers-carousel-item">
                             <h3 className="services-offers-title">{offers.title}</h3>
                             <p className="services-offers-description">{offers.description}</p>
