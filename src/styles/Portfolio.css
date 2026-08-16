@@ -15,7 +15,7 @@
 
 .portfolio-title-yellow {
     font-family: 'Inter', sans-serif;
-    font-weight: 300;
+    font-weight: bold;
     font-size: 40px;
     color: var(--color-primary);
 }
@@ -37,8 +37,50 @@
 .portfolio-carousel-track {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 40px;
     padding:  50px 50px;
+}
+
+.portfolio-carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.portfolio-carousel-sound-btn {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    padding-right: 5px;
+    gap: 3px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.portfolio-carousel-sound-btn-yellow {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--color-primary);
+}
+
+.portfolio-carousel-sound-btn img {
+    width: 15px;
+    height: 15px;
+}
+
+.portfolio-carousel-sound-btn:hover {
+    transform: scale(1.03);
+    filter: brightness(0.97);
+}
+
+.portfolio-carousel-sound-btn:active {
+    transform: scale(0.98);
 }
 
 .portfolio-carousel-btn {
@@ -46,6 +88,7 @@
     border: none;
     width: 50px;
     height: 50px;
+    cursor: pointer;
 }
 
 .portfolio-carousel-btn img {

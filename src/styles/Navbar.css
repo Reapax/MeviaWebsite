@@ -44,6 +44,7 @@
 }
 
 .desktop-nav-item.active {
+  font-weight: bold;
   color: var(--color-primary);
   transform: scale(0.98);
 }
@@ -77,6 +78,7 @@
 
 .mobile-nav-item.active {
   color: var(--color-accent);
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {

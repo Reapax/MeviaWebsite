@@ -2,124 +2,56 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: flex-start;
     position: relative;
     z-index: 1;
-    gap: 40px;
-    padding: 100px 60px;
+    gap: 36px;
+    padding: 50px 100px;
 }
 
 .packages-column {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    min-width: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.packages-column:first-child {
+    flex: 47%;
+}
+
+.packages-column:last-child {
+    flex: 21%;
 }
 
 .packages-base-wrapper,
 .packages-addons-wrapper {
     position: relative;
+    height: 510px;
     background-color: var(--color-dark);
-    border: 10px solid var(--color-white);
+    border: 8px solid var(--color-white);
     border-radius: 20px;
-    padding: 30px;
-    flex: 1;
+    box-sizing: border-box;
+}
+
+.packages-base-wrapper {
+    padding: 0;
 }
 
 .packages-base {
-    inset: 0;
-    padding: 30px;
-    overflow-y: auto;
     display: flex;
     flex-direction: row;
-    gap: 20px;
-}
-
-.packages-base-title {
-    padding-left: 0;
-    margin-bottom: 16px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 40px;
-    color: var(--color-white);
-}
-
-.packages-base-title-yellow {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 40px;
-    color: var(--color-primary);
-}
-
-.packages-base-left {
-    flex: 6;
-}
-
-.packages-base-right {
-    flex: 4;
-}
-
-.packages-base-features-item {
-    column-width: 150px;
-    column-gap: 20px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    color: var(--color-white);
-}
-
-.packages-base-note {
-    column-width: 150px;
-    column-gap: 20px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    color: var(--color-white);
-}
-
-.packages-base-repurposing-list {
-    column-width: 150px;
-    column-gap: 20px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    color: var(--color-white);
-}
-
-.packages-base-onboardingnote {
-    column-width: 150px;
-    column-gap: 20px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    color: var(--color-white);
-}
-
-.packages-base-price {
-    column-width: 150px;
-    column-gap: 20px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 40px;
-    color: var(--color-primary);
-}
-
-.packages-base-onetimefee {
-    column-width: 150px;
-    column-gap: 20px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    color: var(--color-primary);
-}
-
-.packages-addons {
-    inset: 0;
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
     padding: 30px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    gap: 30px;
+    overflow: hidden;
 }
 
+.packages-base-title,
 .packages-addons-title {
     padding-left: 0;
     margin-bottom: 16px;
@@ -129,46 +61,164 @@
     color: var(--color-white);
 }
 
+.packages-base-title-yellow,
 .packages-addons-title-yellow {
     font-family: 'Inter', sans-serif;
-    font-weight: 300;
+    font-weight: bold;
     font-size: 40px;
     color: var(--color-primary);
 }
 
-.packages-addons-note,
-.packages-addons-item {
+.packages-base-left {
+    flex: 0 50%;
+    min-width: 0;
+}
+
+.packages-base-right {
+    flex: 1;
+    min-width: 0;
+}
+
+.packages-base-features-list,
+.packages-base-repurposing-list {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.packages-base-features-item,
+.packages-base-note,
+.packages-base-repurposing-list,
+.packages-base-onboardingnote {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--color-white);
+}
+
+.packages-base-features-item {
+    margin-bottom: 2px;
+}
+
+.packages-base-note {
+    margin: 12px 0 4px;
+    font-weight: bold;
+}
+
+.packages-base-repurposing-list {
+    margin-top: 0;
+}
+
+.packages-base-repurposing-list li {
+    margin-bottom: 2px;
+}
+
+.packages-base-onboardingnote {
+    margin: 0 0 8px;
+}
+
+.packages-base-price {
+    margin: 0;
+    padding: 200px 0 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: var(--color-primary);
+    white-space: nowrap;
+}
+
+.packages-base-onetimefee {
+    margin: 6px 0 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: var(--color-primary);
+    white-space: nowrap;
+}
+
+.packages-addons-wrapper {
+    padding: 0;
+}
+
+.packages-addons {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    gap: 0;
+    overflow: hidden;
+}
+
+.packages-addons-note {
+    margin: 0 0 8px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 15px;
     color: var(--color-white);
 }
 
-.packages-addons-closingNote {
+.packages-addons-list {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.packages-addons-item {
+    margin-bottom: 4px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 15px;
+    line-height: 1.5;
+    color: var(--color-white);
+}
+
+.packages-addons-item strong {
+    font-weight: bold;
+}
+
+.packages-addons-item ul {
+    margin: 2px 0 0;
+    padding-left: 16px;
+}
+
+.packages-addons-item li {
+    margin-bottom: 2px;
+}
+
+.packages-addons-closingNote {
+    margin: 14px 0 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.5;
     color: var(--color-primary);
 }
 
 .packages-btn-container {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     margin-top: 20px;
 }
 
 .packages-btn {
+    display: flex;
+    align-items: center;
     background: transparent;
     border: none;
+    padding: 0;
+    gap: 4px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 20px;
     color: var(--color-white);
+    cursor: pointer;
 }
 
 .packages-btn-yellow {
     font-family: 'Inter', sans-serif;
-    font-weight: 300;
+    font-weight: bold;
     font-size: 20px;
     color: var(--color-primary);
 }

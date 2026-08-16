@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../styles/Portfolio.css";
 import sliderLeft from "../assets/Icons/MEVIA_SliderLeft.png"
 import sliderRight from "../assets/Icons/MEVIA_SliderRight.png"
+import playButton from "../assets/Icons/MEVIA_PlayButton.png"
 import project1 from "../assets/Images/RecentProjects/Projekt_1.png";
 import project2 from "../assets/Images/RecentProjects/Projekt_2.png";
 import project3 from "../assets/Images/RecentProjects/Projekt_3.png";
@@ -37,6 +38,10 @@ export default function Portfolio() {
                     {projects.slice(current, current + 3).map((project) => (
                         <div key={project.title} className="portfolio-carousel-item">
                             <img src={project.image} alt={project.title} className="project-image" />
+                            <button className="portfolio-carousel-sound-btn">
+                                <img src={playButton} alt="Play Button" />
+                                SOUND <span className="portfolio-carousel-sound-btn-yellow">SAMPLE</span>
+                            </button>
                         </div>
                     ))}
                 </div>

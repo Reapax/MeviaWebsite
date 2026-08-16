@@ -1,15 +1,16 @@
 import "../styles/Footer.css";
+import sliderRight from "../assets/Icons/MEVIA_SliderRight_Black.png"
 import instagramIcon from "../assets/Icons/MEVIA_Icon_Instagram.png"
 import tikTokIcon from "../assets/Icons/MEVIA_Icon_TikTok.png"
 import linkedInIcon from "../assets/Icons/MEVIA_Icon_LinkedIn.png"
 
 
 const navLinks = [
-  { label: "Home",      href: "#top"        },
-  { label: "Portfolio", href: "#portfolio"  },
-  { label: "Services",  href: "#services"   },
-  { label: "Packages",  href: "#packages"   },
-  { label: "About Us",  href: "#aboutus"    }
+  { label: "HOME",      href: "#top"        },
+  { label: "PORTFOLIO", href: "#portfolio"  },
+  { label: "SERVICES",  href: "#services"   },
+  { label: "PACKAGES",  href: "#packages"   },
+  { label: "ABOUT US",  href: "#aboutus"    }
 ];
 
 const socialLinks = [
@@ -19,26 +20,46 @@ const socialLinks = [
 ];
 
 export default function Footer() {
+  const handleRight = () => {
+        return
+    };
+
   return (
     <footer className="footer">
       <div className="footer-inner">
-        <div className="footer-column">
-          <div className="footer-navigation">
-            {navLinks.map((nav) => (
-              <a key={nav.label} href={nav.href}>
-                {nav.label}                       
-              </a>
-            ))}
-          </div>
-          <div className="footer-social">
-            {socialLinks.map((s) => (
-              <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer">
-                <img src={s.icon} alt={s.label} className="footer-social-icon" />
-              </a>
-            ))}
-          </div>
+        <div className="footer-navigation">
+          <h4 className="footer-navigation-title">NAVIGATION</h4>
+          {navLinks.map((nav) => (
+            <a key={nav.label} href={nav.href}>
+              {nav.label}                       
+            </a>
+          ))}
         </div>
-
+        <div className="footer-contact">
+          <h4 className="footer-contact-title">KONTAKT</h4>
+          <p>LET'S TALK</p>
+          <p>HELLO@MEVIA.CH</p>
+          <p>ZÜRICH, SWITZERLAND</p>
+        </div>
+        <div className="footer-social">
+          <h4 className="footer-social-title">SOCIALS</h4>
+          {socialLinks.map((s) => (
+            <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer">
+              <img src={s.icon} alt={s.label}/>
+            </a>
+          ))}
+        </div>
+        <div className="footer-copyright">
+          <p>© 2026 MEVIA Podcast Production GmbH</p>
+          <p>Impressum · Datenschutz</p>
+          <p>ALL RIGHTS RESERVED</p>
+        </div>
+        <div className="footer-btn-container">
+          <button className="footer-btn" onClick={handleRight}>
+              DISCOVER <span className="footer-btn-black">PACKAGES</span>
+              <img src={sliderRight} alt="DISCOVER PACKAGES"/>
+          </button>
+        </div>
       </div>
     </footer>
   );

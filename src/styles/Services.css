@@ -15,14 +15,14 @@
 
 .services-title-yellow {
     font-family: 'Inter', sans-serif;
-    font-weight: 300;
+    font-weight: bold;
     font-size: 40px;
     color: var(--color-primary);
 }
 
 .services-offers-title {
     font-family: 'Inter', sans-serif;
-    font-weight: 300;
+    font-weight: bold;
     font-size: 30px;
     color: var(--color-primary);
 }
@@ -91,7 +91,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0 40px;
+    padding: 0 50px;
 }
 
 
@@ -100,6 +100,8 @@
     border: none;
     width: 50px;
     height: 50px;
+    padding: 0 50px;
+    cursor: pointer;
 }
 
 .services-offers-carousel-btn img {
