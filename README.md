@@ -7,6 +7,7 @@
 <p align="center" style="background-color: #1b1b17; padding: 10px;">
    <img src="src/assets/Images/Logos/Mevia_Logo_Yellow.png" width="50%" alt="Mevia Logo"/>
 </p>
+
 ## 🛠 set-up
 
 1. Install the dependencies
