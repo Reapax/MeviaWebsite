@@ -97,6 +97,14 @@
     color: var(--color-white);
 }
 
+.packages-base-onboardingFee {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--color-primary);
+}
+
 .packages-base-features-item {
     margin-bottom: 2px;
 }
@@ -120,19 +128,10 @@
 
 .packages-base-price {
     margin: 0;
-    padding: 200px 0 0;
+    padding: 220px 0 0;
     font-family: 'Inter', sans-serif;
-    font-weight: 300;
+    font-weight: bold;
     font-size: 40px;
-    color: var(--color-primary);
-    white-space: nowrap;
-}
-
-.packages-base-onetimefee {
-    margin: 6px 0 0;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
     color: var(--color-primary);
     white-space: nowrap;
 }
@@ -248,7 +247,8 @@
 
     .packages-base-wrapper,
     .packages-addons-wrapper {
-        height: 500px;
+        height: auto;
+        min-height: 490px;
     }
 
     .packages-base {
@@ -258,30 +258,28 @@
 
     .packages-base-title,
     .packages-addons-title {
-        font-size: 36px;
+        font-size: 34px;
     }
 
     .packages-base-title-yellow,
     .packages-addons-title-yellow {
-        font-size: 36px;
+        font-size: 34px;
     }
 
     .packages-base-features-item,
     .packages-base-note,
     .packages-base-repurposing-list,
     .packages-base-onboardingnote,
+    .packages-base-onboardingFee
     .packages-addons-note,
     .packages-addons-item,
     .packages-addons-closingNote {
-        font-size: 14px;
+        font-size: 13px;
+        line-height: 1.4;
     }
 
     .packages-base-price {
         font-size: 36px;
-    }
-
-    .packages-base-onetimefee {
-        font-size: 18px;
     }
 
     .packages-btn {
@@ -315,7 +313,7 @@
     .packages-base-wrapper,
     .packages-addons-wrapper {
         height: auto;
-        min-height: 500px;
+        min-height: 0;
     }
 
     .packages-base {
@@ -325,12 +323,12 @@
 
     .packages-base-title,
     .packages-addons-title {
-        font-size: 34px;
+        font-size: 32px;
     }
 
     .packages-base-title-yellow,
     .packages-addons-title-yellow {
-        font-size: 34px;
+        font-size: 32px;
     }
 
     .packages-base-left {
@@ -345,15 +343,16 @@
     .packages-base-note,
     .packages-base-repurposing-list,
     .packages-base-onboardingnote,
+    .packages-base-onboardingFee,
     .packages-addons-note,
     .packages-addons-item,
     .packages-addons-closingNote {
         font-size: 14px;
-        line-height: 1.4;
+        line-height: 1.4
     }
 
     .packages-base-price {
-        padding-top: 150px;
+        padding-top: 200px;
         font-size: 36px;
     }
 
@@ -404,6 +403,7 @@
     .packages-base-note,
     .packages-base-repurposing-list,
     .packages-base-onboardingnote,
+    .packages-base-onboardingFee,
     .packages-addons-note,
     .packages-addons-item,
     .packages-addons-closingNote {
@@ -414,10 +414,6 @@
     .packages-base-price {
         padding-top: 20px;
         font-size: 32px;
-    }
-
-    .packages-base-onetimefee {
-        font-size: 18px;
     }
 
     .packages-addons {
@@ -479,6 +475,7 @@
     .packages-base-note,
     .packages-base-repurposing-list,
     .packages-base-onboardingnote,
+    .packages-base-onboardingFee,
     .packages-addons-note,
     .packages-addons-item,
     .packages-addons-closingNote {
@@ -489,10 +486,6 @@
     .packages-base-price {
         padding-top: 15px;
         font-size: 29px;
-    }
-
-    .packages-base-onetimefee {
-        font-size: 17px;
     }
 
     .packages-btn {

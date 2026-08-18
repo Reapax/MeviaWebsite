@@ -18,8 +18,8 @@ const basePackage = {
     note: "Aus jeder Podcast-Folge erstellen wir zusätzlichen Content für Social Media und weitere Kanäle.",
     contentRepurposing: ["Reels", "Shorts", "Highlight-Clips", "Zitat-Clips", "Trailer"],
     price: "CHF 4'340.–",
-    oneTimeFee: "Einmalig CHF 2000.–",
-    onboardingNote: "Hinweis: Einmalige Onboarding-Leistungen. Die folgenden Leistungen fallen ausschliesslich zu Beginn einer Zusammenarbeit an und werden bei wiederkehrenden Podcastproduktionen nicht erneut verrechnet: Kick-Off, Strategie-Call, Konzeption, Produktionsplanung, Pre-Production. Einmaliger Onboarding-Anteil: CHF 2000.",
+    onboardingNote: "Hinweis: Einmalige Onboarding-Leistungen. Die folgenden Leistungen fallen ausschliesslich zu Beginn einer Zusammenarbeit an und werden bei wiederkehrenden Podcastproduktionen nicht erneut verrechnet: Kick-Off, Strategie-Call, Konzeption, Produktionsplanung, Pre-Production.",
+    onboardingFee: " Einmaliger Onboarding-Anteil: CHF 2000.-"
 }
 
 const addOns = {
@@ -88,8 +88,8 @@ export default function Packages() {
                         </div>
                         <div className="packages-base-right">
                             <p className="packages-base-onboardingnote">{basePackage.onboardingNote}</p>
+                            <strong className="packages-base-onboardingFee">{basePackage.onboardingFee}</strong>
                             <p className="packages-base-price">{basePackage.price}</p>
-                            <p className="packages-base-onetimefee">{basePackage.oneTimeFee}</p>
                         </div>
                     </div>
                 </div>
