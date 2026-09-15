@@ -38,3 +38,7 @@
 | Blue   | ![#443dff](https://placehold.co/15/443dff/443dff.png) `#443dff` |
 | White  | ![#faf7f5](https://placehold.co/15/faf7f5/faf7f5.png) `#faf7f5` |
 | Black  | ![#1b1b17](https://placehold.co/15/1b1b17/1b1b17.png) `#1b1b17` |
+
+## ⚠️ Disclaimer
+
+The company and everything else are the result of a school project; all content and information are fictional and should not be taken seriously.
